@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-5">
     <div class="card">
       <div class="card-header">
         <h5 class="card-title text-center pt-1">Add Image</h5>
       </div>
       <div class="card-body">
         <form method="POST" action="/admin" enctype="multipart/form-data">
-          <div class="input-group mb-3">
+          <div class="input-gr oup mb-3">
 
             <input
               type="text"
@@ -14,6 +14,7 @@
               placeholder="Title"
               name="title"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -23,6 +24,7 @@
               name="description"
               class="form-control"
               placeholder="Description"
+              required
             ></textarea>
           </div>
 
@@ -32,6 +34,7 @@
               class="form-control"
               id="inputGroupFile02"
               name="image"
+              required
             />
           </div>
           <div class="d-grid gap-2">
@@ -42,7 +45,7 @@
     </div>
   </div>
 
-  <div class="col-md-8">
+  <div class="col-md-7">
     <table class="table table-hover mt-5 mt-md-0 text-center">
       <thead>
         <tr>
@@ -55,8 +58,8 @@
       <tbody>
         {{#each photos}}
           <tr>
-            <td>{{title}}</td>
-            <td>{{description}}</td>
+            <td>{{title}}...</td>
+            <td>{{description}}...</td>
             <td>
               <div class="btn-group">
                 <a
@@ -65,10 +68,7 @@
                   class="btn btn-success px-3"
                 >View</a>
 
-                <a
-                  href="/images/delete/{{_id}}"
-                  class="btn btn-danger"
-                >Delete</a>
+                <a href="/delete/{{_id}}" class="btn btn-danger">Delete</a>
               </div>
             </td>
           </tr>
