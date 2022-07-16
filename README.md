@@ -1,4 +1,5 @@
 ## Photo gallery plain stack
+#### Objective is to understand the fundamentails of an express-node app.
 
 ## 💫 Screenshots
 ![Screenshot (367)](https://user-images.githubusercontent.com/75943412/179338055-8b5021d9-1b73-4a89-b031-d1cae2f7d381.png)
